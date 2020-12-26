@@ -2,7 +2,7 @@
 title: 关于
 ---
 
-
+# docker 无响应时
 netstat -ntpl//查看服务
 
 ps auxwwf//查看进程树
