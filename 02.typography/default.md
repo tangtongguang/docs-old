@@ -18,3 +18,7 @@ kill -9 pid//杀死进程 -9 强制
 
 ### git 保存密码
 git config credential.helper manager
+
+### vim docs
+
+find /usr/share/vim/vim81/doc -name "*.txt" -exec perl /usr/share/vim/vim81/doc/vim2html.pl /usr/share/vim/vim81/doc/tags {} \;
