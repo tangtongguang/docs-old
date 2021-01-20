@@ -22,3 +22,14 @@ git config credential.helper manager
 ### vim docs
 
 find /usr/share/vim/vim81/doc -name "*.txt" -exec perl /usr/share/vim/vim81/doc/vim2html.pl /usr/share/vim/vim81/doc/tags {} \;
+
+### man-pages
+# Man2html configuration file for apache2
+<Location "/cgi-bin/man/">
+  <IfModule mod_authz_host.c>
+    Require local
+    # Require ip 192.0.2.0/24
+    # Require ip 2001:db8::a00:20ff:fea7:ccea/10
+  </IfModule>
+</Location>
+
